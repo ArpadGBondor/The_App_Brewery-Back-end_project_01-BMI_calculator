@@ -1,4 +1,4 @@
-# The_App_Brewery-Back-end_project_01-BMI_calculator
+# The App Brewery - Back-end project 01 - BMI calculator
 
 ## Udemy - The Complete 2020 Web Development Bootcamp
 ### Section 19: Express.js with Node.js
@@ -9,7 +9,7 @@ A back-end program, that can handle a get request and a post request.
 
 #### How to run: (from terminal)
  Clone the repository: 
- > git clone https://github.com/ArpadGBondor/The_App_Brewery-Back-end_project_01-BMI_calculator
+ > git clone https://github.com/ArpadGBondor/The_App_Brewery-Back-end_project_01-BMI_calculator.git
  
  Enter directory:
  > cd The_App_Brewery-Back-end_project_01-BMI_calculator/
