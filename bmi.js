@@ -40,40 +40,56 @@ app.post("/bmicalculator",function(req,res){
   res.send(
     "<html>"+
       "<head>"+
+        '<meta charset="utf-8">'+
+        '<title>BMI Calculator</title>'+
+        // Bootstrap
         '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">'+
+        '<style media="screen">'+
+           // Challenge footer style
+          '.attribution { font-size: 11px; text-align: center; margin: 0;}'+
+          '.attribution a { color: hsl(228, 45%, 44%); }'+
+        '</style>'+
       "</head>"+
-      "<body>"+
+      '<body class="text-center">'+
         "<h1>BMI calculator</h1>" +
-        "<p>The standard weight status categories associated with BMI ranges for adults are shown in the following table.</p>" +
-        '<table class="table">'+
-          '<thead class="thead-dark">'+
-            "<tr>"+
-              "<th>BMI</th>"+
-              "<th>Weight Status</th>"+
-            "</tr>"+
-          "</thead>"+
-          "<tbody>"+
-            "<tr>"+
-              "<td>Below 18.5</td>"+
-              "<td>Underweight</td>"+
-            "</tr>"+
-            "<tr>"+
-              "<td>18.5 – 24.9</td>"+
-              "<td>Normal or Healthy Weight</td>"+
-            "</tr>"+
-            "<tr>"+
-              "<td>25.0 – 29.9</td>"+
-              "<td>Overweight</td>"+
-            "</tr>"+
-            "<tr>"+
-              "<td>30.0 and Above</td>"+
-              "<td>Obese</td>"+
-            "</tr>"+
-          "</tbody>"+
-        "</table>"+
-        "<h3>Your result:</h3>" +
-        "<p>BMI: " + bmi.toPrecision(4) + "</p> " +
-        "<p>Weight Status: " + result + "</p> " +
+        '<div class="mt-5 mb-5">'+
+          "<h3>Your result:</h3>" +
+          "<p>BMI: " + bmi.toPrecision(4) + "</p> " +
+          "<p>Weight Status: " + result + "</p> " +
+        '</div>'+
+        '<div>'+
+          "<p>The standard weight status categories associated with BMI ranges for adults are shown in the following table.</p>" +
+          '<table class="table ml-auto mr-auto w-75">'+
+            '<thead class="thead-dark">'+
+              "<tr>"+
+                "<th>BMI</th>"+
+                "<th>Weight Status</th>"+
+              "</tr>"+
+            "</thead>"+
+            "<tbody>"+
+              "<tr>"+
+                "<td>Below 18.5</td>"+
+                "<td>Underweight</td>"+
+              "</tr>"+
+              "<tr>"+
+                "<td>18.5 – 24.9</td>"+
+                "<td>Normal or Healthy Weight</td>"+
+              "</tr>"+
+              "<tr>"+
+                "<td>25.0 – 29.9</td>"+
+                "<td>Overweight</td>"+
+              "</tr>"+
+              "<tr>"+
+                "<td>30.0 and Above</td>"+
+                "<td>Obese</td>"+
+              "</tr>"+
+            "</tbody>"+
+          "</table>"+
+        '</div>'+
+        '<footer>'+
+          '<p class="attribution">Challenge created by <a href="https://www.appbrewery.co/" target="_blank">The App Brewery</a>.</p>'+
+          '<p class="attribution">Coded by <a href="https://arpadgbondor.github.io/CV/" target="_blank">Árpád Gábor Bondor</a> in 2020.</p>'+
+        '</footer>'+
       "</body>"+
     "</html>"
   );
