@@ -1,6 +1,6 @@
 # The App Brewery - Back-end project 01 - BMI calculator
 
-## Udemy - The Complete 2020 Web Development Bootcamp
+## Udemy - [Dr. Angela Yu - The Complete 2020 Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 ### Section 19: Express.js with Node.js
 A back-end program, that can handle a get request and a post request.
  - Node.js
